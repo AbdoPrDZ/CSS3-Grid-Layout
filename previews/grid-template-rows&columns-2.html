@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid-Basics</title>
+</head>
+<body>
+  <div class="container">
+    <aside class="side"></aside>
+    <main class="main-content"></main>
+  </div>
+  <style>
+    .container {
+      display: grid;
+      height: 97vh;
+      grid-template-columns: 250px auto;
+    } 
+
+    .side {background-color: red;} 
+    .main-content {background-color: green;}  
+    
+    .container {
+  grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+}
+  </style>
+</body>
+</html>
+
+

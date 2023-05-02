@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid-Basics</title>
+</head>
+<body>
+  <div class="container">
+    <aside class="side-right"></aside>
+    <main class="main-content"></main>
+    <aside class="side-left"></aside>
+  </div>
+  <style>
+    .container {
+      display: grid;
+      height: 97vh;
+      grid-template-columns: repeat(3, 1fr);
+    } 
+
+    .side-right {background-color: red;} 
+    .main-content {background-color: green;} 
+    .side-left {background-color: whitesmoke;}    
+  </style>
+</body>
+</html>
