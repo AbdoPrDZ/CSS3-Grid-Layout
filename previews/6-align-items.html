@@ -1,0 +1,72 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 40% 20% 40%;
+        height: 80px;
+        margin: 20px;
+        gap: 5px;
+        padding: 20px;
+      }
+      .item {
+        background-color: dodgerblue;
+        color: white;
+        border-radius: 15px;
+        padding: 20px 10px;
+      }
+      .container-1 {
+        align-items: start;
+        /* or */
+        place-items: start center;
+      }
+      .container-2 {
+        align-items: end;
+        /* or */
+        place-items: end center;
+      }
+      .container-3 {
+        align-items: center;
+        /* or */
+        place-items: center center;
+      }
+      .container-4 {
+        align-items: stretch;
+        /* or */
+        place-items: stretch center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- (h1{Title}+section.container.container-$>.item*3{Item $})*4 -->
+    <h1>Start</h1>
+    <section class="container container-1">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </section>
+    <h1>End</h1>
+    <section class="container container-2">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </section>
+    <h1>Center</h1>
+    <section class="container container-3">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </section>
+    <h1>Stretch</h1>
+    <section class="container container-4">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </section>
+  </body>
+  </html>

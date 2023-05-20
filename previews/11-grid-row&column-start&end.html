@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid-row&column-start&end</title>
+  <style>
+    .container {
+      display: grid;
+      background-color: lightskyblue;
+      grid-template-columns: 30px 30px 50px 30px 30px;
+      grid-template-rows: 20px 30px 50px;
+      width: fit-content;
+      margin: 20px;
+    } 
+    .item {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container-1 .item {
+      background-color: orangered;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+    .container-2 .item {
+      background-color: cadetblue;
+      grid-column-start: 1;
+      grid-column-end: span 4;
+      grid-row-start: 2;
+      grid-row-end: span 2;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container container-1">
+    <div class="item">Item a</div>
+  </div>
+  <div class="container container-2">
+    <div class="item">Item b</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid-auto-flow</title>
+  <style>
+    .container {
+      display: grid;
+
+      grid-template-columns: repeat(5, 60px);
+      grid-template-rows: 30px 30px;
+      /* or */
+      grid: 30px 30px / repeat(5, 60px);
+
+      width: fit-content;
+      margin: 20px;
+      gap: 5px;
+      border-radius: 5px;
+    }
+    .item {
+      color: white;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    .item-1 {
+      background-color: orangered;
+      grid-column: 1;
+      grid-row: 1 / 3;
+    }
+    .item-2 {
+      background-color: darkcyan;
+    }
+    .item-3 {
+      background-color: brown;
+    }
+    .item-4 {
+      background-color: forestgreen;
+    }
+    .item-5 {
+      background-color: blueviolet;
+      grid-column: 5;
+      grid-row: 1 / 3;
+    }
+
+    .container-1 {
+      grid-auto-flow: row;
+    }
+    .container-2 {
+      grid-auto-flow: column;
+    }
+  </style>
+</head>
+<body>
+  <!-- (.container.container-$>.item.item-${Item $}*5)*2 -->
+  <div class="container container-1">
+    <div class="item item-1">Item 1</div>
+    <div class="item item-2">Item 2</div>
+    <div class="item item-3">Item 3</div>
+    <div class="item item-4">Item 4</div>
+    <div class="item item-5">Item 5</div>
+  </div>
+  <div class="container container-2">
+    <div class="item item-1">Item 1</div>
+    <div class="item item-2">Item 2</div>
+    <div class="item item-3">Item 3</div>
+    <div class="item item-4">Item 4</div>
+    <div class="item item-5">Item 5</div>
+  </div>
+</body>
+</html>

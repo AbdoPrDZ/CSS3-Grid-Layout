@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid-auto-rows&columns</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 60px 60px;
+      grid-template-rows: 90px 90px;
+      width: fit-content;
+      margin: 20px;
+      gap: 5px;
+      border-radius: 5px;
+    }
+    .item {
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+
+    .item-a {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      background-color: orangered;
+    }
+    .item-b {
+      grid-column: 5 / 6;
+      grid-row: 2 / 3;
+      background-color: darkcyan;
+      width: 60px;
+    }
+
+    .container-3 {
+      grid-auto-columns: 60px;
+    }
+  </style>
+</head>
+<body>
+  <!-- section.container>.item*4 -->
+  <section class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </section>
+  <!-- section.container>.item*10 -->
+  <section class="container">
+    <div class="item item-a"></div>
+    <div class="item item-b"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </section>
+  <!-- section.container.container-3>.item*10 -->
+  <section class="container container-3">
+    <div class="item item-a"></div>
+    <div class="item item-b"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </section>
+</body>
+</html>

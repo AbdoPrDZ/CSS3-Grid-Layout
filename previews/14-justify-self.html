@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>justify-self</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(2, auto);
+      background-color: red;
+      border-radius: 20px;
+      margin: 20px;
+      gap: 5px;
+    }
+    .item {
+      background-color: dodgerblue;
+      color: white;
+      border-radius: 20px;
+      padding: 20px 10px;
+    }
+    .item-1 { justify-self: start; }
+    .item-2 { justify-self: end; }
+    .item-3 { justify-self: center; }
+    .item-4 { justify-self: stretch; }
+  </style>
+</head>
+<body>
+  <!-- section.container>.item.item-${Item $}*4 -->
+  <section class="container">
+    <div class="item item-1">Item 1</div>
+    <div class="item item-2">Item 2</div>
+    <div class="item item-3">Item 3</div>
+    <div class="item item-4">Item 4</div>
+  </section>
+</body>
+</html>

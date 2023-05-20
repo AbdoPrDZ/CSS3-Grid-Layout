@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>calculator</title>
+  <style>
+    body {
+      background-color: #f3f3f3;
+    }
+    .calculator {
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: repeat(6, auto);
+      gap: 8px;
+      border-radius: 15px;
+      width: 40%;
+      background-color: #4c4c4c;
+      padding: 20px;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .screen {
+      background-color: #7c9200;
+      border-radius: 15px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      grid-column: span 4;
+      font-size: 24px;
+    }
+    .button {
+      height: 50px;
+      background-color: #797979;
+      color: #f2f2f2;
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+    }
+    .button:hover {
+      cursor: pointer;
+      background-color: #a7a7a7;
+    }
+    .button-0 {
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="screen">0.0</div>
+    <div class="button button-mc">MC</div>
+    <div class="button button-c">C</div>
+    <div class="button button-sqrt">√</div>
+    <div class="button button-d">/</div>
+    <div class="button button-m">X</div>
+    <div class="button button-7">7</div>
+    <div class="button button-8">8</div>
+    <div class="button button-9">9</div>
+    <div class="button button-s">-</div>
+    <div class="button button-4">4</div>
+    <div class="button button-5">5</div>
+    <div class="button button-6">6</div>
+    <div class="button button-p">+</div>
+    <div class="button button-1">1</div>
+    <div class="button button-2">2</div>
+    <div class="button button-3">3</div>
+    <div class="button button-e">=</div>
+    <div class="button button-dot">.</div>
+    <div class="button button-0">0</div>
+  </div>
+</body>
+</html>
