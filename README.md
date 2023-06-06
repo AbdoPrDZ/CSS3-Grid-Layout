@@ -14,4 +14,4 @@
 
 ### Calculator Result:
 
-![Calculator Result](https://github.com/AbdoPrDZ/CSS3-Grid-Layout/raw/main/images/calculator-resualt.png)
+![Calculator Result](https://github.com/AbdoPrDZ/CSS3-Grid-Layout/raw/main/images/calculator-resualt.PNG)
